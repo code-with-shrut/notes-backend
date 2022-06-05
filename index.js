@@ -3,7 +3,7 @@ require("dotenv").config();
 const cors = require('cors');
 const notesRouter = require('./api/v1');
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 // const bodyParser = require('body-parser');
 require("./db")
 // var router = express.Router();
